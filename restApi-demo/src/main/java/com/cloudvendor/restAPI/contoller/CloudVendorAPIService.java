@@ -17,16 +17,16 @@ public class CloudVendorAPIService {
     @PostMapping
     public String createCloudVendorDetails(@RequestBody CloudVendor cloudVendor){
         this.cloudVendor = cloudVendor;
-        return "Cloud vendor created successfully";
+        return "Cloud vendor Created successfully";
     }
     @PutMapping
     public String updateCloudVendorDetails(@RequestBody CloudVendor cloudVendor){
         this.cloudVendor = cloudVendor;
-        return "Cloud vendor updated successfully";
+        return "Cloud vendor Updated successfully";
     }
     @DeleteMapping("{vendorId}")
     public String deleteCloudVendorDetails(String vendorId){
         this.cloudVendor = null;
-        return "Cloud vendor deleted successfully";
+        return "Cloud vendor Deleted successfully";
     }
 }
